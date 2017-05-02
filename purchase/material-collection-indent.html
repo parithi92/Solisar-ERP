@@ -116,53 +116,43 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                      <ul>
-                         <li class="has_sub">
+          <li class="has_sub">
                                 <a href="index.html" class="waves-effect"><span class="label label-pill label-primary pull-xs-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Dashboard </span> </a>
                         </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span>Purchase Collection  </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span>Indent  </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="material-collection-indent.html">View Material Collection Indent</a></li>
+                                    <li><a href="intra-purchase-indent.html">Intra Purchase Indent</a></li>
+                                    <li><a href="purchase-indent-status.html">Purchase Indent Status</a></li>
+                                    <li><a href="material-collection-indent.html"> Material Collection Indent Status</a></li>
+                                    <li><a href="purchase-alert.html">Purchase Alert</a></li>
                                     
                                 </ul>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Delivery+Dispatch </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Purchase </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="delivery-indent.html">View Delivery Indent</a></li>
+                                    <li><a href="purchase-order.html"> Purchase Order</a></li>
                                     
                                 </ul>
                             </li>
-
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span>Intra Stock Transfer</span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="stock-transfer-indent.html">View Intra Stock Transfer</a></li>
-                                    
-                                   
-                                </ul>
-                            </li>
-
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span> Stock Visibility </span><span class="menu-arrow"></a>
                                 <ul class="list-unstyled">
                                      <li><a href="godown-stock.html">Godown Stock</a></li>
                                     <li><a href="blocked-stock.html">Blocked Stock</a></li>
-                                    <li><a href="blocked-stock.html">Idle Stock</a></li>
-                                    <li><a href="blocked-stock.html">Idle Stock Alert</a></li>
+                                   
+                                    
                                 </ul>
                             </li>
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-calendar"></i> <span>Third Party Godown</span><span class="menu-arrow"></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span>Payments</span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="tp-godown-stock.html">Godown Stock</a></li>
-                                    <li><a href="tp-blocked-stock.html">Blocked Stock</a></li>
-                                    <li><a href="tp-godown-master.html">Third Party Godown Master</a></li>
-                                    <li><a href="tp-godown-rent.html">Third Party Rent Details</a></li>
+                                    <li><a href="supplier-payment.html">Payment Details</a></li>
                                 </ul>
-                            </li>
+                            </li>   
 
                     </ul>
                       
@@ -198,23 +188,35 @@
                                     <thead>
                                             <tr>
                                                 <th>Material Collection Indent No</th>
+                                                <th>Raised Date</th>
+                                                <th>Changed Date</th>
                                                 <th>Status</th>
+                                                <th>Convert to Material Collection Receipt</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
                                             <tr>
-                                                <td>MCI10001</td>
-                                                <td>Completed</td>
+                                                <td>MCI1003</td>
+                                                <td>25/01/2017</td>
+                                                <td>16/04/2017</td>
+                                                <td>Approved</td>
+                                                <td><button class="btn btn-primary">Process</button></td>
                                             </tr>
                                              <tr>
-                                                <td>MCI10002</td>
-                                                <td>Partially filled</td>
+                                                <td>MCI1005</td>
+                                                <td>13/04/2017</td>
+                                                <td>14/04/2017</td>
+                                                <td>Rejected</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>MCI10003</td>
-                                                <td>Open</td>
+                                                <td>MCI1018</td>
+                                                <td>12/05/2017</td>
+                                                <td></td>
+                                                <td>Pending</td>
+                                                <td></td>
                                             </tr>
                                             
                                         </tbody>

@@ -116,54 +116,28 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                      <ul>
-                         <li class="has_sub">
+                        <li class="has_sub">
                                 <a href="index.html" class="waves-effect"><span class="label label-pill label-primary pull-xs-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Dashboard </span> </a>
-                        </li>
+                            </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span>Purchase Collection  </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span>Payments and Dues  </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="material-collection-indent.html">View Material Collection Indent</a></li>
-                                    
+                                    <li><a href="credit-note-due.html">Credit Note Dues</a></li>
+                                    <li><a href="debit-note-due.html">Debit Note Dues</a></li>
+                                    <li><a href="completed-credit-note.html">Completed Credit Note </a></li>
+                                    <li><a href="completed-debit-note.html">Completed Debit Note </a></li>
+                                    <li><a href="all-completed-note.html">All Completed Note </a></li>
                                 </ul>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Delivery+Dispatch </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Credit Worthiness </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="delivery-indent.html">View Delivery Indent</a></li>
-                                    
+                                    <li><a href="credit-worthiness.html"> Credit Worthiness</a></li>
+                                    <li><a href="mill-commitment.html"> Mill Commitment</a></li>
                                 </ul>
                             </li>
-
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span>Intra Stock Transfer</span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="stock-transfer-indent.html">View Intra Stock Transfer</a></li>
-                                    
-                                   
-                                </ul>
-                            </li>
-
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span> Stock Visibility </span><span class="menu-arrow"></a>
-                                <ul class="list-unstyled">
-                                     <li><a href="godown-stock.html">Godown Stock</a></li>
-                                    <li><a href="blocked-stock.html">Blocked Stock</a></li>
-                                    <li><a href="blocked-stock.html">Idle Stock</a></li>
-                                    <li><a href="blocked-stock.html">Idle Stock Alert</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-calendar"></i> <span>Third Party Godown</span><span class="menu-arrow"></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="tp-godown-stock.html">Godown Stock</a></li>
-                                    <li><a href="tp-blocked-stock.html">Blocked Stock</a></li>
-                                    <li><a href="tp-godown-master.html">Third Party Godown Master</a></li>
-                                    <li><a href="tp-godown-rent.html">Third Party Rent Details</a></li>
-                                </ul>
-                            </li>
-
                     </ul>
                       
                         <div class="clearfix"></div>
@@ -197,24 +171,45 @@
                                     <table id="datatable" class="table table-striped table-bordered">
                                     <thead>
                                             <tr>
-                                                <th>Material Collection Indent No</th>
-                                                <th>Status</th>
+                                                <th>S.No</th>
+                                                <th>Amount</th>
+                                                <th>Name</th>
+                                                <th>Invoice No</th>
+                                                <th>Due Date</th>
+                                                <th>Outstanding Amount</th>
+                                                <th>Process</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
                                             <tr>
-                                                <td>MCI10001</td>
-                                                <td>Completed</td>
+                                                <td>1</td>
+                                                <td>2,00,000</td>
+                                                <td>Arumugam Mills</td>
+                                                <td>PINV1002</td>
+                                                <td>22/04/2017</td>
+                                                <td>20,000</td>
+                                                <td><button class="btn btn-primary">Process</button></td>
                                             </tr>
                                              <tr>
-                                                <td>MCI10002</td>
-                                                <td>Partially filled</td>
+                                                <td>2</td>
+                                                <td>3,00,000</td>
+                                                <td>Shanmugam Mills</td>
+                                                <td>PINV1034</td>
+                                                <td>24/04/2017</td>
+                                                <td></td>
+                                                <td><button class="btn btn-primary">Process</button></td>
                                             </tr>
                                             <tr>
-                                                <td>MCI10003</td>
-                                                <td>Open</td>
+                                                <td>3</td>
+                                                <td>50,000</td>
+                                                <td>Solisar & Co</td>
+                                                <td>ISTINV1035</td>
+                                                <td>28/04/2017</td>
+                                                <td></td>
+                                                <td><button class="btn btn-primary">Process</button></td>
+                                                 
                                             </tr>
                                             
                                         </tbody>
