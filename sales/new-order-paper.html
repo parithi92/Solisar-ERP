@@ -25,7 +25,7 @@
         <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
         <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
 
-     
+        
         <script src="../assets/js/modernizr.min.js"></script>
 
     </head>
@@ -107,47 +107,41 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <ul>
-                            <li class="has_sub">
+                          <li class="has_sub">
                                 <a href="index.html" class="waves-effect"><span class="label label-pill label-primary pull-xs-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Dashboard </span> </a>
                             </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span> Products List</span><span class="menu-arrow"></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="product-papers.html">Papers & Boards</a></li>
-                                    <li><a href="product-forms.html">Forms</a></li>
-                                    <li><a href="product-glue.html">Glue</a></li>
-                                </ul>
-                            </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span> Orders  </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span>Purchase Orders  </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="ongoing-orders.html">Ongoing</a></li>
-                                    <li><a href="completed-orders.html">Completed</a></li>
+                                    <li><a href="new-order-paper.html">New Purchase Order Paper</a></li>
+                                    <li><a href="new-order-form.html">New Purchase Order Form</a></li>
+                                    <li><a href="new-order-glue.html">New Purchase Order Glue</a></li>
+                                    <li><a href="view-purchase-order.html">View Purchase Orders</a></li>
+                                    <li><a href="sales-indent.html">View Sales Indent</a></li>
                                 </ul>
                             </li>
-
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span> Payments </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span> Pricing  </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="pending-payments.html">Pending Payment</a></li>
-                                    <li><a href="credit-note.html">Credit Note</a></li>
-                                    <li><a href="completed-payment.html">Completed Payment</a></li>
+                                    <li><a href="customer-pricing.html">Customer Pricing</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-fire"></i> <span> Customer </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="create-customer.html">Create Customer</a></li>
+                                    <li><a href="view-customer.html">View Customer</a></li>
                                    
                                 </ul>
                             </li>
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-calendar"></i> <span> Complaint  </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Payments </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="new-complaint.html">New Complaint</a></li>
-                                    <li><a href="view-complaint.html">Complaint Status</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i> <span> Statutory  </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="statutory-status.html">Statutory Status</a></li>
-                                    
+                                    <li><a href="pending-payments.html">Outstanding Payments</a></li>
+                                    <li><a href="completed-payment.html">Completed Payments</a></li>
+                                   
                                 </ul>
                             </li>
                         </ul>
@@ -159,7 +153,13 @@
                 </div>
 
             </div>
-          
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
             <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
@@ -169,51 +169,65 @@
                                 <div class="card-box">
                                     <div class="row">
                                         <form action="#" data-parsley-validate novalidate>
-                                      
+                                        
                                             <div class="col-sm-12 col-xs-12 col-md-12">
                                                 <div class="p-20">
+                                                    <h4 class="header-title m-t-0 m-b-30">Product Details</h4>
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
                                                         <div class="form-group">
-                                                            <label for="product_name">Part 1: </label> 
-                                                            <input type="text" class="form-control" name="part_1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-xs-6 col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="product_name">Part 2: </label> 
-                                                            <input type="text" class="form-control" name="part_2">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-xs-6 col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="unit_type">No of Copies : </label> 
-                                                             <select class="form-control" name="copies">
-                                                                <option>Single</option>
-                                                                <option>Double</option>
-                                                               
+                                                            <label for="product_name">Product Name: </label> 
+                                                            <select class="form-control" name="product">
+                                                                <option>Coated Board</option>
+                                                                <option>Coated Paper</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
                                                         <div class="form-group">
-                                                            <label for="unit_type">Colour : </label> 
-                                                             <select class="form-control" name="copies">
-                                                                <option>Single Colour</option>
-                                                                <option>Multi Colour</option>
-                                                               
+                                                            <label for="product_gsm">GSM: </label> 
+                                                            <select class="form-control" name="gsm">
+                                                                <option>800</option>
+                                                                <option>850</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
                                                         <div class="form-group">
-                                                            <label for="product_name">No of Sheets: </label> 
-                                                            <input type="text" class="form-control" name="sheets_count">
+                                                            <label for="brand">Brand: </label> 
+                                                            <select class="form-control" name="brand">
+                                                                <option>BILT Coated Board</option>
+                                                                <option>Hi KOTE Board</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
                                                         <div class="form-group">
-                                                            <label for="product_name">Sample Form Image: </label> 
-                                                            <input type="file" class="form-control" name="sample_form">
+                                                            <label for="unit_type">Unit Type: </label> 
+                                                            <select class="form-control" name="unit_type">
+                                                                <option>Sheet</option>
+                                                                <option>Reel</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="size_1">Size 1: </label> 
+                                                            <input type="text" class="form-control" name="size_1">
+                                                             
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="size_2">Size 2: </label> 
+                                                            <input type="text" class="form-control" name="size_2">
+                                                             
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="unit">Quantity in Kg: </label> 
+                                                            <input type="text" class="form-control" name="quantity">
+                                                             
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
@@ -221,11 +235,29 @@
                                                             <label for="unit_type">Payment Terms: </label> 
                                                              <select class="form-control" name="payment_terms">
                                                                 <option>Advance</option>
-                                                                <option>Actual</option>
-                                                                
+                                                                <option>30</option>
+                                                                <option>60</option>
+                                                                <option>90</option>
+                                                                <option>>90</option>
                                                             </select>
                                                         </div>
                                                     </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="unit_type">Tax Type: </label> 
+                                                             <select class="form-control" name="tax_type">
+                                                                <option>VAT</option>
+                                                                <option>CST </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6 col-md-6">
+
+                                                    </div>
+                                                    
                                                     <div class="col-sm-6 col-xs-6 col-md-6">
                                                         <div class="form-group">
                                                             <label for="unit_type">Delivery Address: </label> 
@@ -260,6 +292,7 @@
                                                              
                                                         </div>
                                                     </div>
+                                                    
                                                     <div class="col-sm-12 col-xs-12 col-md-12" style="text-align: center;">
                                                     <div class="form-group text-right m-b-0">
                                                         <button class="btn btn-primary waves-effect waves-light" type="submit">
